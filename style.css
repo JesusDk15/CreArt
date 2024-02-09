@@ -1,10 +1,11 @@
 /* Color Palette */
 :root {
-  --primary-color: #FF6B6B;   /* Primary color */
-  --secondary-color: #FFD166; /* Secondary color */
-  --accent-color: #06D6A0;    /* Accent color */
-  --text-color: #333333;      /* Text color */
-  --background-color: #F1FAEE; /* Background color */
+  --primary-color: #fbded4;   /* Primary color */
+  --secondary-color: #191716; /* Secondary color */
+  --third-color: #e6256f;    /* Accent color */
+  --four-color: #958580;      /* Text color */
+  --background-color: #746c64; /* Background color */
+  --fifht-color: #f48caa;     /* Light color */
 }
 
 /* Example usage */
@@ -13,24 +14,14 @@ body {
   color: var(--text-color);
 }
 
-h1 {
-  color: var(--primary-color);
+/* Navbar */
+.mynavbar {
+  background: linear-gradient(to right, var(--primary-color) 0%, var(--fifht-color) 100%);
+}
+.nav-link {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
 }
 
-button {
-  background-color: var(--secondary-color);
-  color: var(--text-color);
-}
-
-a {
-  color: var(--accent-color);
-}
-nav {
-  background-color: var(--primary-color);
-}
-
-.navimg{
-  position: absolute;
-  margin-top: 0px;
-}
 
