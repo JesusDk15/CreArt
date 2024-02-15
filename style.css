@@ -27,12 +27,6 @@ body {
   background-color: var(--third-color);
   color: var(--primary-color);
 }
-
-.about{
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  height: 11vh;
-}
 .main-title {
   font-size: 72px;
   font-weight: 700;
@@ -103,3 +97,30 @@ body {
       border-color: var(--fifht-color); 
       color: white;
     }
+.aboutus-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+}
+.abt{
+  background-color: var(--fifht-color);
+  color: var(--secondary-color);
+  height: 40vh;
+  padding-top: 10vh;
+  padding-bottom: 45vh;
+}
+.title-about{
+
+  font-size: 72px;
+  font-weight: 700;
+  text-align: center;
+  
+}
+.p-style{
+  font-size: 2vh;
+  font-weight: 350;
+  text-align: justify;
+ 
+  padding-left: 11vh;
+}
