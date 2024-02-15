@@ -10,8 +10,8 @@
 
 /* Example usage */
 body {
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background-color: var(--primary-color);
+  color: var(--four-color);
 }
 
 /* Navbar */
@@ -21,7 +21,85 @@ body {
 .nav-link {
   color: white;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 2vh;
+}
+.banner {
+  background-color: var(--third-color);
+  color: var(--primary-color);
 }
 
+.about{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  height: 11vh;
+}
+.main-title {
+  font-size: 72px;
+  font-weight: 700;
+}
+.main-P {
+  font-size:2vh;
+  font-weight: 350;
+}
+.face{
 
+  height: 450px;
+}
+.main-btn {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  background-color: var(--fifht-color);
+  padding: 15px 50px;
+  border-radius: 35px;
+
+}
+.main-btn:hover {
+  
+  color: var(--primary-color);
+}
+
+    .card {
+      border: none;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease-in-out;
+      background-color: var(--four-color);
+      color: white;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-img-top {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border: var(--four-color) 2px solid;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: white;
+    }
+
+    .card-text {
+      font-size: 14px;
+      color: white;
+    }
+
+    .btn-primary {
+      background-color: var(--fifht-color);
+      border-color: var(--third-color);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--third-color);
+      border-color: var(--fifht-color); 
+      color: white;
+    }
