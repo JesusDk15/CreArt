@@ -222,6 +222,10 @@ color: var(--secondary-color);
   animation: remove-data 1s forwards;
 }
 
+.footerc{
+
+  background-color: var(--six-color);
+}
 /* Card animation */
 @keyframes show-data {
   50% {
