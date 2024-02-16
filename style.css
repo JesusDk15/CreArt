@@ -81,12 +81,7 @@ body {
   color: white;
 }
 
-.aboutus-img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
 
-}
 
 .abt {
   background-color: var(--fifht-color);
@@ -117,7 +112,7 @@ color: var(--secondary-color);
   font-weight: 350;
   text-align: justify;
 
-  padding-left: 11vh;
+  
 }
 
 .service-icon {
@@ -139,14 +134,19 @@ color: var(--secondary-color);
   background: linear-gradient(to bottom, var(--six-color) 90%, var(--primary-color) );
 }
 .service-image{
-  padding-top: 9vh;
+  padding-top: 4vh;
   padding-left: 6vh;
-  width: 328px;
+  width: 55vh;
   border-radius: 1.5rem;
   margin-left: auto;
   margin-right: auto;
 }
-
+.service-image1{
+  width: 30vh;
+  height: 30vh;
+  overflow: visible;
+  
+}
 
 
 
@@ -226,6 +226,7 @@ color: var(--secondary-color);
 
   background-color: var(--six-color);
 }
+
 /* Card animation */
 @keyframes show-data {
   50% {
