@@ -107,6 +107,12 @@ color: var(--secondary-color);
   text-align: left;
 color: var(--secondary-color);
 }
+.titulo-why{
+  font-size: 72px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--secondary-color);
+}
 .p-style {
   font-size: 2vh;
   font-weight: 350;
@@ -136,7 +142,7 @@ color: var(--secondary-color);
 .service-image{
   padding-top: 4vh;
   padding-left: 6vh;
-  width: 55vh;
+ 
   border-radius: 1.5rem;
   margin-left: auto;
   margin-right: auto;
