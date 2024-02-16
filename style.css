@@ -1,11 +1,18 @@
 /* Color Palette */
 :root {
-  --primary-color: #fbded4;   /* Primary color */
-  --secondary-color: #191716; /* Secondary color */
-  --third-color: #e6256f;    /* Accent color */
-  --four-color: #958580;      /* Text color */
-  --background-color: #746c64; /* Background color */
-  --fifht-color: #f48caa;     /* Light color */
+  --primary-color: #fbded4;
+  /* Primary color */
+  --secondary-color: #191716;
+  /* Secondary color */
+  --third-color: #e6256f;
+  /* Accent color */
+  --four-color: #958580;
+  /* Text color */
+  --background-color: #746c64;
+  /* Background color */
+  --fifht-color: #f48caa;
+  /* Light color */
+  --six-color: #F9B6C1;
 }
 
 /* Example usage */
@@ -18,27 +25,33 @@ body {
 .mynavbar {
   background: linear-gradient(to right, var(--primary-color) 0%, var(--fifht-color) 100%);
 }
+
 .nav-link {
   color: white;
   font-weight: 700;
   font-size: 2vh;
 }
+
 .banner {
   background-color: var(--third-color);
   color: var(--primary-color);
 }
+
 .main-title {
   font-size: 72px;
   font-weight: 700;
 }
+
 .main-P {
-  font-size:2vh;
+  font-size: 2vh;
   font-weight: 350;
 }
-.face{
+
+.face {
 
   height: 450px;
 }
+
 .main-btn {
   font-size: 18px;
   font-weight: 400;
@@ -49,78 +62,235 @@ body {
   border-radius: 35px;
 
 }
+
 .main-btn:hover {
-  
+
   color: var(--primary-color);
 }
 
-    .card {
-      border: none;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-      transition: box-shadow 0.3s ease-in-out;
-      background-color: var(--four-color);
-      color: white;
-      overflow: hidden;
-    }
 
-    .card:hover {
-      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-    }
+.btn-primary {
+  background-color: var(--fifht-color);
+  border-color: var(--third-color);
+  color: white;
+}
 
-    .card-img-top {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      border: var(--four-color) 2px solid;
-    }
+.btn-primary:hover {
+  background-color: var(--third-color);
+  border-color: var(--fifht-color);
+  color: white;
+}
 
-    .card-title {
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 10px;
-      color: white;
-    }
-
-    .card-text {
-      font-size: 14px;
-      color: white;
-    }
-
-    .btn-primary {
-      background-color: var(--fifht-color);
-      border-color: var(--third-color);
-      color: white;
-    }
-
-    .btn-primary:hover {
-      background-color: var(--third-color);
-      border-color: var(--fifht-color); 
-      color: white;
-    }
-.aboutus-img{
+.aboutus-img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 
 }
-.abt{
+
+.abt {
   background-color: var(--fifht-color);
   color: var(--secondary-color);
-  height: 40vh;
-  padding-top: 10vh;
-  padding-bottom: 45vh;
+
+  padding-top: 5vh;
+  padding-bottom: 1vh;
+  height: 100%;
 }
-.title-about{
+
+.title-about {
 
   font-size: 72px;
   font-weight: 700;
   text-align: center;
-  
+color: var(--secondary-color);
+
 }
-.p-style{
+.subtitle-style{
+  
+  font-size: 3vh;
+  font-weight: 500;
+  text-align: left;
+color: var(--secondary-color);
+}
+.p-style {
   font-size: 2vh;
   font-weight: 350;
   text-align: justify;
- 
+
   padding-left: 11vh;
+}
+
+.service-icon {
+  background-color: white;
+  padding: 15px;
+  width: 55px;
+  border-radius: 50%;
+}
+
+.service-icon {
+  transition: all 0.4s;
+}
+
+.service-card:hover .service-icon {
+  margin-left: 30px;
+}
+
+.whyback {
+  background: linear-gradient(to bottom, var(--six-color) 90%, var(--primary-color) );
+}
+.service-image{
+  padding-top: 9vh;
+  padding-left: 6vh;
+  width: 328px;
+  border-radius: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
+.card__article {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__img {
+  width: 328px;
+  border-radius: 1.5rem;
+}
+
+.card__data {
+  width: 200px;
+  background-color: white;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+  border-radius: 1rem;
+  position: absolute;
+  bottom: -9rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  opacity: 0;
+  transition: opacity 1s 1s;
+  color: var(--secondary-color);
+}
+
+.card__description {
+  display: block;
+  font-size: 1.5vh;
+  margin-bottom: .25rem;
+}
+
+.card__title {
+  font-size: var(--h2-font-size);
+  font-weight: 500;
+  color: var(--title-color);
+  margin-bottom: .75rem;
+}
+
+.card__button {
+  text-decoration: none;
+  font-size: 2vh;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+.card__button:hover {
+  text-decoration: underline;
+}
+
+/* Naming animations in hover */
+.card__article:hover .card__data {
+  animation: show-data 1s forwards;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+.card__article:hover {
+  animation: remove-overflow 2s forwards;
+}
+
+.card__article:not(:hover) {
+  animation: show-overflow 2s forwards;
+}
+
+.card__article:not(:hover) .card__data {
+  animation: remove-data 1s forwards;
+}
+
+/* Card animation */
+@keyframes show-data {
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(-7rem);
+  }
+}
+
+@keyframes remove-overflow {
+  to {
+    overflow: initial;
+  }
+}
+
+@keyframes remove-data {
+  0% {
+    transform: translateY(-7rem);
+  }
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(.5rem);
+  }
+}
+
+@keyframes show-overflow {
+  0% {
+    overflow: initial;
+    pointer-events: none;
+  }
+  50% {
+    overflow: hidden;
+  }
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 340px) {
+  
+
+  .card__data {
+    width: 250px;
+    padding: 1rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 768px) {
+  .card__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1120px) {
+  
+
+  .card__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card__img {
+    width: 348px;
+  }
+  .card__data {
+    width: 316px;
+    padding-inline: 2.5rem;
+  }
 }
